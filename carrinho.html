@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seu Carrinho - Essência Premium</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <svg class="logo-img" viewBox="0 0 24 24" fill="none" stroke="#d4af37" stroke-width="2">
+                <path d="M12 22a7 7 0 0 0 7-7c0-4.3-7-13-7-13S5 10.7 5 15a7 7 0 0 0 7 7z"/>
+            </svg>
+            <h1>Essência Premium</h1>
+        </div>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="carrinho.html">Carrinho 🛒</a>
+            <a href="cadastro.html">Entrar/Cadastrar</a>
+        </nav>
+    </header>
+    <main class="cart-page-layout">
+        <section>
+            <table class="cart-table">
+                <caption>Seus Itens Selecionados</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Produto</th>
+                        <th scope="col">Preço Unitário</th>
+                        <th scope="col">Quantidade</th>
+                        <th scope="col">Subtotal</th>
+                        <th scope="col">Ação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="cart-item-info">
+                                <img class="cart-thumb" src="https://unsplash.com" alt="Bleu de France Mini">
+                                <div><strong>Bleu de France</strong><br><small>Masculino</small></div>
+                            </div>
+                        </td>
+                        <td>R$ 549,90</td>
+                        <td><input type="number" min="1" value="1" style="width: 50px;"></td>
+                        <td>R$ 549,90</td>
+                        <td><button style="color:red; background:none; border:none; cursor:pointer;">Remover</button></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="cart-item-info">
+                                <img class="cart-thumb" src="https://unsplash.com" alt="Gold Luxury Mini">
+                                <div><strong>Gold Luxury</strong><br><small>Feminino</small></div>
+                            </div>
+                        </td>
+                        <td>R$ 629,90</td>
+                        <td><input type="number" min="1" value="1" style="width: 50px;"></td>
+                        <td>R$ 629,90</td>
+                        <td><button style="color:red; background:none; border:none; cursor:pointer;">Remover</button></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="cart-item-info">
+                                <img class="cart-thumb" src="https://unsplash.com" alt="Rose Premium Mini">
+                                <div><strong>Rose Premium</strong><br><small>Feminino</small></div>
+                            </div>
+                        </td>
+                        <td>R$ 489,90</td>
+                        <td><input type="number" min="1" value="1" style="width: 50px;"></td>
+                        <td>R$ 489,90</td>
+                        <td><button style="color:red; background:none; border:none; cursor:pointer;">Remover</button></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="5" style="text-align: right; font-weight: bold; color: green;">
+                            🎉 Parabéns! Você ganhou Frete Grátis nesta compra!
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+        <aside class="order-summary">
+            <h3>Resumo do Pedido</h3>
+            <div class="summary-row">
+                <span>Subtotal:</span>
+                <span>R$ 1.669,70</span>
+            </div>
+            <div class="summary-row">
+                <span>Frete:</span>
+                <span style="color: green;">GRÁTIS</span>
+            </div>
+            <div class="summary-row" style="flex-direction: column; gap: 5px;">
+                <label for="cupom">Cupom de Desconto:</label>
+                <div style="display: flex; gap: 5px;">
+                    <input type="text" id="cupom" placeholder="DIGITEAQUI" style="padding: 5px; flex: 1;">
+                    <button style="padding: 5px 10px;">Aplicar</button>
+                </div>
+            </div>
+            <div class="summary-row" style="font-weight: bold; font-size: 18px;">
+                <span>Total:</span>
+                <span>R$ 1.669,70</span>
+            </div>
+            <a href="cadastro.html" class="btn-checkout">Finalizar Compra →</a>
+        </aside>
+    </main>
+    <footer>
+        <p>&copy; 2026 Essência Premium. Imagens da Perfumaria Fictícia. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
